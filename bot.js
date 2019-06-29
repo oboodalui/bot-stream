@@ -49,10 +49,10 @@ if (message.content.startsWith(prefix + 'game')) {
      console.log('test' + argresult);
     message.channel.sendMessage(`Playing: **${argresult}`)
 } 
-if (message.content.startsWith(prefix + 'test')) {
-  client.user.setGame(argresult);
+if (message.content.startsWith(prefix + 'boom')) {
+  client.user.setActivity(argresult, {type: 'Booming'})
      console.log('test' + argresult);
-    message.channel.sendMessage(`Killing: **${argresult}`)
+    message.channel.sendMessage(`LISTENING Now: **${argresult}`)
 } 
 
 
