@@ -40,7 +40,7 @@ if (message.content.startsWith(prefix + 'savatar')) {
 }
 
 if (message.content.startsWith(prefix + 'str')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/peery13");
+  client.user.setGame(argresult, "https://www.twitch.tv/oboodalui");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
@@ -49,7 +49,11 @@ if (message.content.startsWith(prefix + 'game')) {
      console.log('test' + argresult);
     message.channel.sendMessage(`Playing: **${argresult}`)
 } 
-
+if (message.content.startsWith(prefix + 'test')) {
+  client.user.setGame(argresult);
+     console.log('test' + argresult);
+    message.channel.sendMessage(`Killing: **${argresult}`)
+} 
 
 
 });
